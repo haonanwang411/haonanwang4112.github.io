@@ -4,5 +4,5 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-redirect_to: /assets/pdf/haonanwang202411.pdf
+cv_pdf: haonan202412.pdf
 ---
