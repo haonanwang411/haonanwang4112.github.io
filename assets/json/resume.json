@@ -53,10 +53,10 @@
    }
   ],
     
-  "work experience": [
+  "Experience": [
     {
       "name": "ISLE Lab, Johns Hopkins University",
-      "location": "Baltimore,USA"
+      "location": "Baltimore, USA"
       "position": "Research Assistant",
       "url": "https://www.jhu.edu/",
       "startDate": "2024-03",
@@ -117,9 +117,7 @@
       "startDate": "2021-09",
       "endDate": "2022-09",
       "Course": ["C++ Program Design", "Mathematical Modeling", "Numerical Analysis","Data mining"]
-    }
-
-    
+    }  
   ],
 
   "awards": [
@@ -130,6 +128,7 @@
       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
+    
   ],
   "skills": [
     {
