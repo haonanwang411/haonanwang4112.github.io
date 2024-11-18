@@ -1,81 +1,59 @@
----
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: CLEM-Reg
+description: An automated point cloud based registration algorithm for correlative light and volume electron microscopy
+img: assets/img/projects/clemreg/clemreg_project_post.jpeg
 importance: 1
 category: work
 related_publications: true
 ---
+this posts summarises the [paper](https://www.biorxiv.org/content/10.1101/2023.05.11.540445v2) I helped work on during
+my placement year at the Francis Crick Institute. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Background
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
+Correlative light and electron microscopy (CLEM) is a powerful imaging technique that combines the advantages of 
+fluorescence microscopy (FM) and electron microscopy (EM). FM allows you to visualise fluorescently labeled proteins 
+in living cells and tissues, while EM provides ultra-structural details at much higher resolutions. However, aligning 
+the FM and EM image volumes is challenging due to their different scales, appearances, and potential deformations during 
+sample preparation. Traditionally, expert microscopists have manually identified corresponding landmarks between the two
+imaging modalities and aligned the datasets through computationally intensive optimization methods. This manual process 
+is extremely laborious, low-throughput, and can introduce human bias.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/clemreg/vCLEM-fig.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Simplified protocol for creating a vCLEM dataset.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Methods
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
+To address the limitations associated with current techniques for registration of CLEM image volumes CLEM-Reg was developed, 
+a fully automated workflow to align CLEM datasets. The key innovation is using mitochondria as internal 
+landmarks that can be automatically segmented in both FM and EM images using a combination of classical image processing 
+and deep learning techniques. Once the mitochondria are segmented, CLEM-Reg represents them as sparse 3D point clouds - a modality-agnostic 
+representation. These point clouds are then aligned using coherent point drift registration, a state-of-the-art 
+probabilistic algorithm. The final alignment transformation is used to warp the FM volume onto the EM volume, producing 
+the integrated CLEM overlay.
 
-{% raw %}
+## Results
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+---
+Tested CLEM-Reg on three newly acquired benchmark CLEM datasets of HeLa cells revealed its performance is on par with  
+manual expert alignments. Remarkably, CLEM-Reg achieved near expert-level registration accuracy in aligning target 
+structures like lysosomes and endosomes that were not used as landmarks. One of the major advantages of CLEM-Reg is that 
+it entirely automates the alignment process in an unbiased and reproducible manner, eliminating the need for tedious 
+manual input. It is also implemented as an easy-to-use plugin for napari, a popular open-source multi-dimensional image viewer.
 
-{% endraw %}
+
+## Conclusions
+
+---
+Overall, CLEM-Reg represents a significant advance that could enable wider adoption of CLEM by increasing throughput and 
+reproducibility. The paper's authors have made their code and the benchmark datasets publicly available to aid further 
+development of multimodal registration algorithms by the wider scientific community.
