@@ -9,33 +9,29 @@
       value: English, Chinese
     - name: email
       value: hwang298@jh.edu/whn628@gmail
-
+      
 - title: Education
   type: time_table
   contents:
     - title: Master of Science in Engineering in Computer Science(M.S.E),
-      institution: Johns Hopkins University, 
+      institution: Johns Hopkins University, Baltimore, Maryland, USA,
       year: 2023.08.24-2024.12.19,
-      location: Baltimore, Maryland, USA,
-      url: https://www.jhu.edu/,
-      Research Collaboration : Ziang Xiao(Project Advisor),Jason Eisner(Faculty Advisor),
-      Graduate Project : QuantifyEval: Measuring the Informativeness of Popular LLM Benchmarks on Downstream Utility,
-      Main courses: NLP: Self-Supervised Models, Advanced Topics in Conversation User Interfaces, Introduction to Human Language Technology, Introduction to Human-Computer Interaction,
-      GPA: [3.6/4.0],
+      description:
+        - url: https://www.jhu.edu/,
+        - Research Collaboration : Ziang Xiao(Project Advisor),Jason Eisner(Faculty Advisor),
+        - Graduate Project : QuantifyEval: Measuring the Informativeness of Popular LLM Benchmarks on Downstream Utility,
+        - Main courses: NLP: Self-Supervised Models, Advanced Topics in Conversation User Interfaces, Introduction to Human Language Technology, Introduction to Human-Computer Interaction,
+        - GPA: [3.6/4.0],
+  
     - title: Information and Computing Science(B.S.Degree)
-      institution: Liaoning Technology University
-      location: Fuxin, Liaoning, China,
-      url: https://en.lntu.edu.cn/,
-      year: 2019.09.01-2023.07.10
-      Research Collaboration: Wei Liu(Project Advisor|Institute of Mathematics and Systems Science ),Yu Zhang(Project Advisor|Institute of Machine Learning and Data Mining),
-      Undergraduate Thesis: Research on the application of human action recognition based on LSTM-CNN,[Dissertation-Excellent score],
-      Main courses: Numerical Analysis, Machel Learning, Mathematical Analysis, Information Theory, Data Mining, Data Structure, Databases,
-      GPA: [3.42/4.0(Rank Top 1st)],
-      #description:
-        #- Description 1.
-        #- Description 2.
-      
-   
+      institution: Liaoning Technology University, Fuxin, Liaoning, China,
+      year: 2023.08.24-2024.12.19,
+      description:
+        - url: https://en.lntu.edu.cn/,
+        - Research Collaboration: Wei Liu(Project Advisor|Institute of Mathematics and Systems Science ),Yu Zhang(Project Advisor|Institute of Machine Learning and Data Mining),
+        - Undergraduate Thesis: Research on the application of human action recognition based on LSTM-CNN,[Dissertation-Excellent score],
+        - Main courses: Numerical Analysis, Machel Learning, Mathematical Analysis, Information Theory, Data Mining, Data Structure, Databases,
+        - GPA: [3.42/4.0(Rank Top 1st)],
   
 
       
