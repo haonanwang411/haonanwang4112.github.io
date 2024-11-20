@@ -2,7 +2,7 @@
 layout: page
 title: CLEM-Reg
 description: An automated point cloud based registration algorithm for correlative light and volume electron microscopy
-img: assets/img/projects/clemreg/clemreg_project_post.jpeg
+img: assets/img/paper2021_1.png
 importance: 1
 category: work
 related_publications: true
