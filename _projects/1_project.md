@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CLEM-Reg
+title: PRC
 description: An automated point cloud based registration algorithm for correlative light and volume electron microscopy
 img: assets/img/paper2021_1.png
 importance: 1
@@ -23,7 +23,7 @@ is extremely laborious, low-throughput, and can introduce human bias.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/clemreg/vCLEM-fig.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/paper2021_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
