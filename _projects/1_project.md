@@ -2,12 +2,12 @@
 layout: page
 title: PRC
 description: An automated point cloud based registration algorithm for correlative light and volume electron microscopy
-img: assets/img/paper2021_1.png
+img: 
 importance: 1
 category: work
 related_publications: true
 ---
-this posts summarises the [paper](https://www.biorxiv.org/content/10.1101/2023.05.11.540445v2) I helped work on during
+this posts summarises the  I helped work on during
 my placement year at the Francis Crick Institute. 
 
 ## Background
@@ -23,7 +23,7 @@ is extremely laborious, low-throughput, and can introduce human bias.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/paper2021_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path=" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
